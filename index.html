@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calci-body">
+       
+        <input type="text" id="ans" class="ans" disabled/>
+   
+        <div class="line1">
+        <button  onclick="clearWholeDispaly()"  class="btn">AC</button>
+        <button value="C" class="btn" onclick="deleteLastVal()">C</button>
+        <button value="%" class="btn" onclick="appendDisplay('%')">%</button>
+        <button value="/" class="btn" onclick="appendDisplay('/')">/</button>
+    </div>
+    <div class="line1">
+        <button value="7" class="btn" onclick="appendDisplay('7')">7</button>
+        <button value="8" class="btn" onclick="appendDisplay('8')">8</button>
+        <button value="9" class="btn" onclick="appendDisplay('9')">9</button>
+        <button value="*" class="btn" onclick="appendDisplay('*')">*</button>
+    </div>
+    <div class="line1">
+        <button value="4" class="btn" onclick="appendDisplay('4')">4</button>
+        <button value="5" class="btn" onclick="appendDisplay('5')">5</button>
+        <button value="6" class="btn" onclick="appendDisplay('6')">6</button>
+        <button value="-" class="btn" onclick="appendDisplay('-')">-</button>
+        </div>
+        <div class="line1">
+            <button value="1" class="btn" onclick="appendDisplay('1')">1</button>
+            <button value="2" class="btn" onclick="appendDisplay('2')">2</button>
+            <button value="3" class="btn" onclick="appendDisplay('3')">3</button>
+            <button value="+" class="btn" onclick="appendDisplay('+')">+</button>
+            </div>
+            <div class="line1">
+                <button value="00" class="btn" onclick="appendDisplay('00')">00</button>
+                <button value="0" class="btn" onclick="appendDisplay('0')">0</button>
+                <button value="." class="btn" onclick="appendDisplay('.')">.</button>
+                <button value="=" class="btn" onclick="calculateResult()">=</button>
+                </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

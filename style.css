@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: hsl(0, 0%, 85%);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calci-body{
+    background-color: #4a4a4a;
+    color:white;
+    border:5px ridge #000000;
+    height: 500px;
+    width:300px;
+    border-radius: 15px;
+}
+input{
+    height:70px;
+    width:250px;
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    border: 3px ridge #232222;
+    background-color: #b9b9b9;
+    box-shadow: 10px 15px 10px rgb(42, 42, 42);
+    color:white;
+    text-align: right;
+    font-weight: bolder;
+}
+.line1{
+   margin:10px;
+   margin-left: 20px;
+   
+}
+.btn{
+    color:white;
+    background-color: rgb(90, 88, 88);
+    transition:all 0.2s ease-in-out;
+    height: 60px;
+    width:60px;
+    margin-top: 5px;
+    font-weight: 900;
+    text-shadow:8px 8px 15px rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 10px 15px 10px rgb(42, 42, 42);
+    cursor: pointer;
+}
